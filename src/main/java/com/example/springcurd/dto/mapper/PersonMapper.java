@@ -6,7 +6,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
-public class PersonMapper {
+public interface PersonMapper {
     PersonDto getPersonToPersonDto(Person person);
 
     Person getPersonDtoToPerson(PersonDto personDto);
